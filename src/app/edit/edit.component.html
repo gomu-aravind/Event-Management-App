@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <b>Update Employee</b>
+            </div>
+            <div class="card-body">
+                <form #empForm="ngForm" (ngSubmit)="UpdateEmployeeInfo()">
+                <label>First Name</label>
+                <input type="text"  [(ngModel)]="emp.first_name" 
+                name="firstName" 
+                class="form-control"  required #fname="ngModel"/>
+                <br />
+                <label>Last Name</label>
+                <input type="text"  [(ngModel)]="emp.last_name" 
+                name="lastName" class="form-control"  required #lname="ngModel"/>
+                <br />
+                <label>Email</label>
+                <input type="text"  [(ngModel)]="emp.email" 
+                name="emailId" class="form-control" required #email="ngModel"/>
+                <br />
+                <input type="submit"  value="Update Employee" [disabled]="empForm.invalid" class="btn btn-success" />
+                <br /><br />
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

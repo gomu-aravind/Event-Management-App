@@ -1,0 +1,44 @@
+.container{
+    padding:0;
+    display: flex;
+    margin-top:40px;
+    flex-direction: column;
+    gap:20px;
+}
+.btn-dark{
+    padding: 0;
+    border:1px solid hwb(210 47% 17%);
+}
+.btn>a{
+    color:rgb(119, 165, 211);
+    text-decoration: none;
+}
+a{
+    display: block;
+    padding:8px 12px;
+}
+.btn:hover>a{
+    color:black;
+    background-color: rgb(119, 165, 211);
+}
+tr:nth-child(even) {
+    background-color: rgba(255,233,206,0.7);
+}
+th,td{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(40%);
+}
+.table{
+    margin-bottom: 0;
+    background-color: #eff6ff;
+}
+.form-control{
+    width:25%;
+}

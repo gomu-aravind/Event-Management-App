@@ -1,0 +1,23 @@
+.section{
+    background-color: rgb(33,37,41);
+    display: flex;
+    gap:90px;
+    padding: 40px;
+    width:53%;
+    margin:8rem auto 0 auto;
+    background-image: linear-gradient(to right, rgb(33,37,41) , rgb(163, 199, 236));
+    margin-bottom: 115px;
+    justify-content: space-between;
+   }
+   .section img{
+    background-color: rgb(33,37,41);
+    height:250px;
+   }
+   .section h1,p{
+    color:#fff;
+   }
+   li{
+    list-style-type: square;
+    color: #b7d3ff;
+   }
+   

@@ -1,0 +1,15 @@
+.navbar{
+    padding: 16px 15px;
+}
+
+.navbar-brand{
+    color:rgb(119, 165, 211);
+}
+.nav-item >a{
+    color:#fff;
+    cursor: pointer;
+}
+.nav-item:hover >a{
+    color:rgb(119, 165, 211);
+}
+

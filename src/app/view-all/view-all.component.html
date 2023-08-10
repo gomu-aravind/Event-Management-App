@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="first">
+        <button class="btn btn-dark"><a class="addEmpNew" routerLink="/add">Add New Employee</a></button>
+        <input type="text"  [(ngModel)]="email"  class="form-control" (ngModelChange)="Search()"  placeholder="enter email to search" />
+    </div>
+    <hr>
+    
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Operations</th>
+            </tr>
+            <tr  *ngFor="let emp of empAll">
+                <td>{{emp.id}}</td>
+                <td>{{emp.first_name}}</td>
+                <td>{{emp.last_name}}</td>
+                <td>{{emp.email}}</td>
+                <td>
+                    <input type="button"  value="View Details"  class="btn btn-info btn-sm" (click)="getEmployee(emp.id)" />
+                </td>
+            </tr>
+        </table>
+    
+</div>
